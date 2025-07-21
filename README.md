@@ -97,7 +97,7 @@ This project is licensed under the **MIT License** — feel free to use, modify,
 
 ## 💡 Credits
 
-Created with ❤️ by [Your Name](https://github.com/Tilak46)  
+Created with ❤️ by [Tilak R](https://github.com/Tilak46)  
 Powered by [face-api.js](https://github.com/justadudewhohacks/face-api.js)
 
 ---
