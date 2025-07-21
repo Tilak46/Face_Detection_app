@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👁️ Face Detection App
 
-## Getting Started
+A sleek real-time face detection web app built with **Next.js**, **Tailwind CSS**, and **face-api.js**. It uses your webcam to detect faces and draw bounding boxes — all processed on your device to ensure privacy.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- 🎥 Real-time face detection via webcam
+- 🧠 Uses `face-api.js` with `TinyFaceDetector`
+- 📦 Built with Next.js App Router (`app/` directory)
+- 💅 Styled using Tailwind CSS and modern UI principles
+- 🎬 Start/Stop video recording with face boxes
+- 🔐 100% on-device processing — no backend or data sharing
+
+---
+
+## 📸 Screenshots
+
+### 🟢 Live Face Detection
+
+![Live Detection](./public/screenshots/live-detection.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Face Detection**: [face-api.js](https://github.com/justadudewhohacks/face-api.js)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Recording**: MediaRecorder API + Canvas Stream
+
+---
+
+## 🧑‍💻 Local Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Tilak46/face-detection-app.git
+   cd face-detection-app
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Download face-api.js models**
+
+   - Place all model files from [here](https://github.com/justadudewhohacks/face-api.js-models) into:
+     ```
+     public/models/
+     ```
+
+4. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Visit**: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🌐 Live Demo
+
+> 🔗 [Vercel Live Link](https://face-detection-app-by-tilak.vercel.app/)
+
+---
+
+## 📁 Folder Structure
+
+```
+.
+├── public/
+│   ├── models/          # face-api.js model files
+│   └── screenshots/     # placeholder for screenshots
+├── src/
+│   ├── app/
+│   │   └── page.js      # Main page using FaceTracker
+│   └── components/
+│       └── FaceTracker.js
+├── .gitignore
+├── tailwind.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📜 License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is licensed under the **MIT License** — feel free to use, modify, and share!
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 💡 Credits
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Created with ❤️ by [Your Name](https://github.com/Tilak46)  
+Powered by [face-api.js](https://github.com/justadudewhohacks/face-api.js)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
